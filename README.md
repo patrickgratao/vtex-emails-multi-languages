@@ -59,8 +59,8 @@ You will see something like this:
 	<!-- partial -->
 
 	<body>
-		{{#compare  orders.0.clientPreferencesData.locale  '=='  'it-IT'  }}
-			<!-- partial:it-IT/01-confirmed.hbs -->
+		{{#compare  orders.0.clientPreferencesData.locale  '=='  'pt-BR'  }}
+			<!-- partial:pt-BR/01-confirmed.hbs -->
 			<!-- partial -->
 		 {{else}}
 			<!-- partial:en-US/01-confirmed.hbs -->
