@@ -1,5 +1,7 @@
 <h1 align="center">
-    VTEX Multi Language E-mails
+  <img src="https://vtex.com/wp-content/themes/VTEXTheme/v2/images/base/vtex.svg">
+  <br><br>
+  VTEX Multi Language E-mails
 </h1>
 
 ## :rocket: Overview
