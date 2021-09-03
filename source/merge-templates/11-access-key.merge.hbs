@@ -1,0 +1,20 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+
+<!-- partial:../source/templates/partials/main/_html-head.hbs -->
+<!-- partial -->
+
+<body>
+  {{#compare aditionalData.locale '==' 'pt-BR' }}
+    <!-- partial:pt-BR/11-access-key.hbs -->
+    <!-- partial -->
+
+  {{else}}
+    <!-- partial:en-US/11-access-key.hbs -->
+    <!-- partial -->
+  {{/compare}}
+</body>
+
+</html>
