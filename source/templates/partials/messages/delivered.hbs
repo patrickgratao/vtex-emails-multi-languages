@@ -1,5 +1,5 @@
 {{#compare items.length '==' shippingData.logisticsInfo.length}}
-  <p class="mt4 yamamay__text">
+  <p class="mt4 custom__text">
     <!-- partial:hi.hbs --><!-- partial -->
     {{#compare items.length '==' 1}}
       ((i18n.shipping.deliveredProduct))
@@ -12,7 +12,7 @@
 
 <!-- Intro message: Just some items shipped -->
 {{#compare items.length '!=' shippingData.logisticsInfo.length}}
-  <p class="mt4 yamamay__text">
+  <p class="mt4 custom__text">
     <!-- partial:hi.hbs --><!-- partial -->
     {{#compare items.length '==' 1}}
       ((i18n.shipping.deliveredOneProduct))
