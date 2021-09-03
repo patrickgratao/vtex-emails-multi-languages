@@ -93,7 +93,7 @@
   line-height: 3.18rem;
   text-align: center;
   letter-spacing: 0.355263px;
-  color: #ca0538;
+  color: #000;
   margin-top: 3.4rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -124,7 +124,7 @@
 /* HEADER */
 
 .header__container {
-  background-color: #ca0538;
+  background-color: #000;
   height: 80px;
 
   & .header__container-logo {
@@ -158,7 +158,7 @@
   padding: 0;
   max-width: 52rem;
   margin: 0 auto;
-  background-color: #ca0538;
+  background-color: #000;
 }
 
 .my-class {
@@ -167,7 +167,7 @@
 }
 
 .newsletter__table-footer {
-  background: #ca0538;
+  background: #000;
   color: #fff;
   max-width: 52rem;
 }
@@ -242,7 +242,7 @@
     padding: 3%;
 
     &.bottom-menu__active {
-      color: #ca0538;
+      color: #000;
     }
   }
 }

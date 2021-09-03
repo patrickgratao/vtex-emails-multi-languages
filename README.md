@@ -114,4 +114,4 @@ You will see something like this:
 
 ---
 
-Made with 💗 by [Patryck Gratão]('https://www.linkedin.com/in/ppgratao/') - Codeby Europe.
+Improved with 💗 by [Patryck Gratão]('https://www.linkedin.com/in/ppgratao/')
