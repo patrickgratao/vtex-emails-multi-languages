@@ -1,90 +1,117 @@
-# VTEX Emails
+<h1 align="center">
+    VTEX Multi Language E-mails
+</h1>
 
-VTEX Emails is an email framework based on [bojler](https://github.com/Slicejack/bojler) for developing transactional email templates for VTEX E-commerces.
+## :rocket: Overview
 
-## Features
+VTEX Emails is an email framework for developing transactional email templates for VTEX E-commerces.
 
-VTEX Emails inherited [Bojler's features](https://github.com/Slicejack/bojler#features) like:
+This is a improved version of [VTEX Emails](https://github.com/vtex/vtex-emails) which we can use to make multi languages e-mails.
 
-- SASS support
-- Automatic CSS inlining
-- Embedded CSS
-- Webserver with Live Reload
-- Reset styles
-- Responsive design
+## :open_file_folder: Folders and Structure
 
-And it has other important features:
+  | Folder | Description |
+  |--|--|
+  |`public`	| compiled files used to preview with localhost:8000 |
+  |`dist`  |compiled files - copy and paste inside message center template  |
+  |`source` |working folder  |
 
-- Handlebars compiling
-- Tachyons integration
-- Partials for code reuse
-- VTEX transactional JSONs examples for preview
-- i18n for internationalization
+### Source folder
 
-## Folders and structure
+  <img src="./gitlab/source-folder-view.JPG" alt="Source Folder" width="300"/>
 
-- `public` compiled files for preview
-- `dist` compiled files for exporting
-- `source` working folder
-  - `data` JSON files containing Orders data
-  - `helpers` VTEX's Helpers functions
-  - `locales` i18n files
-  - `sass` styles
-  - `templates` e-mails templates
-    - `partials` e-mails parts
+  | Source folder| Description |
+  |--|--|
+  |`data`  |  JSON files containing Orders data|
+  | `helpers` | VTEX's Helpers functions |
+  | `locales` |i18n files  |
+  | `merge-templates` |Builder used to combine multiple languages ​​into a single file  |
+  | `sass` |styles folder  |
+  | `templates` |e-mails templates  |
+
+
+### Sass folder
+
+> Inside Sass folder you can see a `custom.scss` file which is used to put custom styles of templates
+
+### :pushpin: Merge Templates
+
+One of master pieces of this automation are the merge templates.
+
+Each template have your merge-template file.
+
+Example:
+> **Template**: 01-confirmed.hbs <br>
+> **Merge Template**: 01-confirmed.**merge**.hbs
+
+>**Tip**: All of merge templates have a **merge** before the extension file.
+
+You will see something like this:
+
+  <img src="./gitlab/merge-templates.JPG" alt="Merge Templates Folder" width="300"/>
+
+```handlebars
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+
+	<!-- partial:../source/templates/partials/main/_html-head.hbs -->
+	<!-- partial -->
+
+	<body>
+		{{#compare  orders.0.clientPreferencesData.locale  '=='  'it-IT'  }}
+			<!-- partial:it-IT/01-confirmed.hbs -->
+			<!-- partial -->
+		 {{else}}
+			<!-- partial:en-US/01-confirmed.hbs -->
+			<!-- partial -->
+		{{/compare}}
+	</body>
+</html>
+```
+### Templates
+
+ <img src="./gitlab/templates-emails.JPG" alt="Templates Folder" width="300"/>
+
+  | Templates folder| Description |
+  |--|--|
+  |`partials`  |  E-mails parts|
+  | `partials > main` | E-mails header and footer content|
+
 
 ### You must NOT add, change or modify:
 
 - `helpers` you can use only Handlebars and VTEX's Helpers
 
-### You can add, change or modify:
-
-- `data` you can create folders with different JSON examples as well. They must have a real VTEX JSON structure
-- `locales` use your own communication
-- `sass` use your own style
-- `templates` name your templates your own way. **Each template must have a JSON file with the same name.**
-- `partials` use the partials that make sense for you
-
-## Hands on
+## :computer: How To Start
 
 ### Installation
 
-1.  Download or clone VTEX Emails
-2.  Install npm dependencies: run `npm install`
+1.  Download or clone this repo
+2.  Install npm dependencies: run `npm install` or `yarn install`
 
-### Developing
+### Developing Mode
 
 0.  Requires node `8.x`
-1.  Run `npm run gulp dev`
+1.  Run `npm run gulp dev` or `yarn gulp dev`
 2.  Go to [http://localhost:8000/](http://localhost:8000/)
-3.  Choose the language folder and open the template that you want to preview
+3.  Choose `finals` folder and open the template that you want to preview
 
 ### Generating an exportable VTEX template
 
-1.  Run `npm run gulp dist`
-2.  Go to `dist` folder, copy the template content and paste it in VTEX Message Center
+1.  Run `npm run gulp dist` or `yarn gulp dist`
+2.  Go to `dist` folder
+3.  Go to `finals` folder
+4.  Copy the template content and paste it in VTEX Message Center
 
 ### Generating a light preview version for testing
 
-1.  Run `npm run gulp preview`
+1.  Run `npm run gulp preview` or  `yarn gulp preview`
 2.  Go to `public` folder, copy the template content and test it using services like MailChimp
 
-### Changing JSON data set
 
-1.  Stop npm service
-2.  Create a new folder in `source/data`
-3.  Change `orderJsonToRead` variable in `gulpfile.js` to the new folder name
-4.  Start npm service
+### All ready, now app is running.
 
-## To do
+---
 
-- Live reload is not working very well. Sometimes you need to refresh the page manually
-- Recompiling doesn't work for JSON changes. You'll need to stop npm service and start it again
-- Improve Outlook compatibility
-- Improve VTEX inStore scenarios
-
-## Bugs and feature requests
-
-If you find a bug or need new feature please open a new issue and we will discuss about it.
-
-**Thank you! :)**
+Made with 💗 by [Patryck Gratão]('https://www.linkedin.com/in/ppgratao/') - Codeby Europe.

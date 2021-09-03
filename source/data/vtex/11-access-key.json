@@ -1,0 +1,42 @@
+{
+  "to": [
+    {
+      "name": "Patryck",
+      "email": "ppgratao@gmail.com"
+    }
+  ],
+  "aditionalData": {
+    "accessKey": "359662",
+    "locale": "pt-BR",
+    "userAgent": "Chrome, Windows",
+    "geolocation": {
+      "country": "Brazil",
+      "region": "GO",
+      "city": "Goiânia"
+    }
+  },
+  "_accountInfo": {
+    "MainAccountName": "patryck",
+    "AccountName": "patryck",
+    "Cnpj": null,
+    "Id": "be919618-2a29-49b3-bb73-ddf7da73a0be",
+    "IsActive": true,
+    "IsOperating": false,
+    "CreationDate": "2021-03-12T17:56:36",
+    "OperationDate": null,
+    "CompanyName": "Patryck Gratão",
+    "TradingName": "Patryck Gratão",
+    "City": null,
+    "Complement": null,
+    "Country": null,
+    "State": null,
+    "Address": null,
+    "District": null,
+    "Number": null,
+    "PostalCode": null,
+    "Licences": null,
+    "ParentAccountName": null,
+    "InactivationDate": null,
+    "Platform": "vtex"
+  }
+}
