@@ -1,10 +1,17 @@
-/** custom CUSTOM CSS **/
+/** CUSTOM CSS **/
 
 // email_wrapper class is used to style container of e-mail
 .email__wrapper {
   max-width: 52rem;
   font-family: 'Roboto', sans-serif !important;
   font-size: 16px;
+}
+
+.custom__logo-text {
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .custom__text {

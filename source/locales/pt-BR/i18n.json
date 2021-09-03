@@ -12,7 +12,7 @@
     "units": "un.",
     "free": "Grátis",
     "regards": "Atenciosamente,",
-    "team": "Equipe",
+    "team": "Yamamay",
     "cantCancel": "Não foi possível cancelar seu pedido.",
     "cancelationInstructions": "Caso queria seguir com o cancelamento, você poderá recusar a entrega e posteriormente seu pagamento será estornado.",
     "on": "Em",
@@ -137,5 +137,26 @@
   "package": {
     "title": "Pacote",
     "seller": "Fornecido e entregue por"
+  },
+  "custom": {
+    "madeIn": "Feito em",
+    "statusTitle": "Seguindo seu pedido",
+    "statusConfirmed": "Pedido confirmado",
+    "statusApproved": "Pago Aceito",
+    "statusInvoiced": "Fatura emitida",
+    "statusShipped": "Pedido à camino",
+    "statusDelivered": "Pedido entregue",
+    "support": "Precisa de ajuda?",
+    "supportLink": "portal de atendimento",
+    "topHeaderText": "Assine a newsletter e ganhe <strong>15% de desconto</strong> no seu primeiro pedido",
+    "newsletterFooterText": "<span class='newsletter__text--bold-underline'>Inscreva-se</span> para ficar sempre atualizado: você receberá imediatamente um DESCONTO de 15% em sua próxima compra online",
+    "followFooterText": "Siga-nos",
+    "accountCreatedTitle": "Your registration was successful.",
+    "accountCreatedText": "From today you can access your reserved area to check your orders, your personal information and, if you are the holder, activities and points related to the CYAO card",
+    "accountCreatedButton": "Go to shopping"
+  },
+  "accesskey": {
+    "Confirmation": "Precisamos de sua confirmação para conceder acesso à página que você está tentando visualizar.",
+    "Return": "Retorne à página e use o token abaixo para fazer o login:"
   }
 }

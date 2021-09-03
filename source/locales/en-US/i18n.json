@@ -1,31 +1,31 @@
 {
   "common": {
-		"currency": "$",
-		"order": "Order",
-		"hi": "Hi",
-		"summary": "Summary",
-		"items": "Items",
-		"shipping": "Delivery",
-		"discounts": "Discounts",
-		"taxes": "Taxes",
-		"total": "Total",
-		"units": "un.",
-		"free": "Free",
-		"regards": "Regards,",
-		"team": "Team",
-		"cantCancel": "We were unable to cancel your order.",
-		"cancelationInstructions": "If you would like to continue with the cancellation, you can refuse delivery and your payment will be refunded later.",
-		"on": "On",
-		"lowercase": {
-			"item": "item",
-			"items": "items",
-			"on": "on",
-			"between": "between",
-			"and": "and"
-		}
+    "currency": "$",
+    "order": "Order",
+    "hi": "Hi",
+    "summary": "Summary",
+    "items": "Items",
+    "shipping": "Delivery",
+    "discounts": "Discounts",
+    "taxes": "Taxes",
+    "total": "Total",
+    "units": "un.",
+    "free": "Free",
+    "regards": "Regards,",
+    "team": "Yamamay",
+    "cantCancel": "We were unable to cancel your order.",
+    "cancelationInstructions": "If you would like to continue with the cancellation, you can refuse delivery and your payment will be refunded later.",
+    "on": "On",
+    "lowercase": {
+      "item": "item",
+      "items": "items",
+      "on": "on",
+      "between": "between",
+      "and": "and"
+    }
   },
   "order": {
-		"title": "Thanks for your order.",
+    "title": "Thanks for your order.",
     "titleReplaced": "Your order has been replaced.",
     "titleCancelled": "Your order has been canceled.",
     "reference": "Regarding the Order",
@@ -39,7 +39,7 @@
     "packages": "Pacotes"
   },
   "payment": {
-		"title": "Payment",
+    "title": "Payment",
     "pending": "Waiting for payment approval",
     "approved": "Your payment has been approved.",
     "lastDigits": "last digits",
@@ -51,7 +51,7 @@
     "preparingShippingManyProducts": "We are providing the invoice for your order and shipping your products."
   },
   "invoice": {
-		"invoiced": "Your Invoice has been issued.",
+    "invoiced": "Your Invoice has been issued.",
     "manyInvoices": "Your order has more than one invoice.",
     "notifications": "We will let you know about the progress of each of them.",
     "handlingProduct": "We are packaging your product to arrange shipping.",
@@ -63,7 +63,7 @@
   },
   "shipping": {
     "address": "Address",
-		"onePackageDelivery": "Your delivery has started.",
+    "onePackageDelivery": "Your delivery has started.",
     "onePackagePickup": "Your order is available for withdrawal.",
     "onePackageDelivered": "Your order has been delivered.",
     "onePackagePickedUp": "Your order has been picked up",
@@ -104,7 +104,7 @@
     "deliveredProducts": "Your products have just been delivered to your address.",
     "deliveredOneProduct": "One of the products of your order has just been delivered to your address.",
     "deliveredSomeProducts": "Some of the products in your order have just been delivered to your address.",
-		"minute": "minute",
+    "minute": "minute",
     "minutes": "minutes",
     "hour": "hour",
     "hours": "hours",
@@ -114,7 +114,7 @@
     "businessDays": "business days",
     "summaryTitle": "Summary of your package(s)",
     "lowercase": {
-			"inUpTo": "in up to",
+      "inUpTo": "in up to",
       "upTo": "to",
       "from": "after",
       "today": "today",
@@ -137,5 +137,26 @@
   "package": {
     "title": "Package",
     "seller": "Provided and delivered by"
+  },
+  "custom": {
+    "madeIn": "Hecho en",
+    "statusTitle": "Follow your order",
+    "statusConfirmed": "Pedido confirmado",
+    "statusApproved": "Pagamento Aprovado",
+    "statusInvoiced": "Nota Fiscal Emitida",
+    "statusShipped": "Pedido a Caminho",
+    "statusDelivered": "Pedido Entregue",
+    "support": "Precisa de ajuda? Acesse nossa",
+    "supportLink": "central de atendimento",
+    "topHeaderText": "Sign up for the newsletter and get <strong>15% off</strong> your first order",
+    "newsletterFooterText": "<span class='newsletter__text--bold-underline'>Subscribe</span> to be always updated on news: you will immediately receive a 15% DISCOUNT on your next online purchase",
+    "followFooterText": "Follow us",
+    "accountCreatedTitle": "Your registration was successful.",
+    "accountCreatedText": "From today you can access your reserved area to check your orders, your personal information and, if you are the holder, activities and points related to the CYAO card",
+    "accountCreatedButton": "Go to shopping"
+  },
+  "accesskey": {
+    "Confirmation": "We need your confirmation to grant access to the page you are trying to view.",
+    "Return": "Return to the page and use the token below to login:"
   }
 }
