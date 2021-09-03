@@ -1,22 +1,28 @@
 <tr>
-  <td class="w-100 ph4-ns pt3 pb4">
+  <td class="w-100 ph4-ns pt2 pb1 yamamay__text">
     <p class="mt4">
-      <!-- partial:hi.hbs --><!-- partial -->
+      <!-- partial:hi.hbs -->
+      <!-- partial -->
+    </p>
+
+    <p class="mt2">
       ((i18n.order.introMessage))
     </p>
 
-    <!-- partial:order-link.hbs --><!-- partial -->
+    <!-- partial:order-link.hbs -->
+    <!-- partial -->
 
     <!-- Boleto bancário -->
-    {{#each orders.0.paymentData.transactions}}
-      {{#each payments}}
-        {{#eq paymentSystemName 'Boleto Bancário'}}
-          <p>((i18n.payment.bankInvoiceReminder))</p>
-          <p>
-            <a class="dib ph3 pv2 br2 white bg-green no-underline fw5" href="{{replace url '{Installment}' installments}}">((i18n.payment.bankInvoiceShow))</a>
-          </p>
-        {{/eq}}
-      {{/each}}
+    {{!-- {{#each orders.0.paymentData.transactions}}
+    {{#each payments}}
+    {{#eq paymentSystemName 'Boleto Bancário'}}
+    <p>((i18n.payment.bankInvoiceReminder))</p>
+    <p>
+      <a class="custom__principal-button"
+        href="{{replace url '{Installment}' installments}}">((i18n.payment.bankInvoiceShow))</a>
+    </p>
+    {{/eq}}
+    {{/each}}
     {{/each}}
   </td>
-</tr>
+</tr> --}}
