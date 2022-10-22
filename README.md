@@ -94,7 +94,7 @@ You will see something like this:
 
 ### Developing Mode
 
-0.  Requires node `8.x`
+0.  Requires node `16.x`
 1.  Run `npm run gulp dev` or `yarn gulp dev`
 2.  Go to [http://localhost:8000/](http://localhost:8000/)
 3.  Choose `finals` folder and open the template that you want to preview
@@ -116,4 +116,4 @@ You will see something like this:
 
 ---
 
-Improved with 💗 by [Patryck Gratão]('https://www.linkedin.com/in/ppgratao/')
+Improved with 💗 by [Patryck Gratão](https://www.linkedin.com/in/patrickgratao/)
